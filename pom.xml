@@ -61,13 +61,7 @@
                         <configuration>
                             <rules>
                                 <rule>
-                                    <element>CLASS</element>
-                                    <excludes>
-                                        <exclude>ru.netology.domain.Book</exclude>
-                                        <exclude>ru.netology.domain.Product</exclude>
-                                        <exclude>ru.netology.domain.Smartphone</exclude>
-                                        <exclude>ru.netology.repository.ProductRepository</exclude>
-                                    </excludes>
+                                    <element>BUNDLE</element>
                                     <limits>
                                         <limit>
                                             <counter>BRANCH</counter>

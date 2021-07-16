@@ -21,7 +21,7 @@ class ProductManagerTest {
     private Product sixth = new Smartphone(6, "Honor", 30000, "Huawei");
 
     @BeforeEach
-    public void setting(){
+    public void setting() {
         manager.addProduct(first);
         manager.addProduct(second);
         manager.addProduct(third);
@@ -66,15 +66,15 @@ class ProductManagerTest {
         assertArrayEquals(expected, actual);
     }
 
- //   @Disabled
- //   @Test
- //   public void shouldSearchByTextProduct() {
+    // Этот тест не работает. Не понимаю, в чем дело
+    //   @Test
+    //   public void shouldSearchByTextProduct() {
 //
 //        Product[] actual = manager.searchBy("Laptop");
 //        Product[] expected = new Product[]{third};
 
-  //      Assertions.assertArrayEquals(expected, actual);
-  //  }
+    //      Assertions.assertArrayEquals(expected, actual);
+    //  }
 
     @Test
     public void shouldFailSearchByTextIfNotExists() {
